@@ -1,0 +1,37 @@
+algoritmo "Exercício 11"
+//  
+//  
+
+var
+A, B, C, MEDIA : REAL
+
+
+inicio
+
+ ESCREVA("DIGITE A PRIMEIRA NOTA: ")
+ LEIA(A)
+ A <- (A * 0.2)
+ ESCREVA("DIGITE A SEGUNDA NOTA: ")
+ LEIA(B)
+ B <- (B * 0.3)
+ ESCREVA("DIGITE A TECEIRA NOTA: ")
+ LEIA(C)
+ C <- (C * 0.5)
+ MEDIA := (A + B + C)
+
+
+
+ SE MEDIA <= 4  ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO REPROVADO ")
+ FIMSE
+ SE MEDIA <=  6.9 ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO DE RECUPERAÇÃO ")
+ FIMSE
+ SE MEDIA >= 7 ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO APROVADO ")
+ FIMSE
+
+fimalgoritmo
